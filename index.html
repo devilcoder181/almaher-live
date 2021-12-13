@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Al Maher - Customize, Modify, Upgrade, Repair, Replace</title>
+    <meta name="description" content="One of our biggest areas of work is providing Swimming Pool Service Contracts to both domestic swimming pool customers and commercial swimming pool customers. Giving you the security to know that your pool is being looked after properly and allowing you the time to sit back and just relax using your pool or spa system.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="preload" href="assets/images/logo.png" as="image">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="57x57" href="assets/images/apple-icon-57x57.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="60x60" href="assets/images/apple-icon-60x60.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="72x72" href="assets/images/apple-icon-60x60.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="76x76" href="/assets/imagesapple-icon-76x76.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="114x114" href="assets/images/apple-icon-114x114.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="120x120" href="assets/images/apple-icon-120x120.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="144x144" href="assets/images/apple-icon-144x144.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="152x152" href="assets/images/apple-icon-152x152.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" size="180x180" href="assets/images/apple-icon-180x180.png">
+    <link data-n-head="ssr" rel="icon" type="image/png" size="192x192" href="assets/images/android-icon-192x192.png">
+    <link data-n-head="ssr" rel="icon" type="image/png" size="32x32" href="assets/images/favicon-32x32.png">
+    <link data-n-head="ssr" rel="icon" type="image/png" size="96x96" href="assets/images/favicon-96x96.png">
+    <link data-n-head="ssr" rel="icon" type="image/png" size="16x16" href="assets/images/favicon-16x16.png">
+    <link data-n-head="ssr" rel="manifest" href="assets/images/manifest.json">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <style>
+      .loader {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        background: #fff;
+        margin: auto;
+        -webkit-transition: width .5s ease-in-out, height .5s ease-in-out, opacity .3s .5s ease-in-out, visibility .3s .5s ease-in-out;
+        -o-transition: width .5s ease-in-out, height .5s ease-in-out, opacity .3s .5s ease-in-out, visibility .3s .5s ease-in-out;
+        transition: width .5s ease-in-out, height .5s ease-in-out, opacity .3s .5s ease-in-out, visibility .3s .5s ease-in-out
+      }
+      .loader .loader-block {
+        -webkit-transition: all .4s .1s ease-in-out;
+        -o-transition: all .4s .1s ease-in-out;
+        transition: all .4s .1s ease-in-out
+      }
+      .loader .loader-img {
+        margin: 35px 0;
+        text-align: center
+      }
+      .loader .loader-img img {
+        max-width: 220px;
+        width: 220px;
+        height: auto
+      }
+      @media only screen and (max-width:767px){
+        .loader .loader-img img {
+        max-width: 180px;
+        width: 180px;
+      }
+      }
+      .is-loaded .loader {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none
+      }
+      .dom-loaded .loader .loader-block {
+        opacity: 0;
+        -webkit-transform: translateY(2em) scale(.5);
+        -ms-transform: translateY(2em) scale(.5);
+        transform: translateY(2em) scale(.5)
+      }
+    .spinner {
+      position: relative;
+      z-index: 1;
+      height: 40px;
+      width: 40px;
+      margin: 0 auto;
+    }
+    [class^=ball-] {
+      position: absolute;
+      display: block;
+      left: 30px;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      transition: all 0.5s;
+      animation: circleRotate 4s both infinite;
+      transform-origin: 0 250% 0;
+    }
+    @keyframes circleRotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(1440deg);
+      }
+    }
+    .ball-1 {
+      z-index: -1;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    }
+    .ball-2 {
+      z-index: -2;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 0.6, 0.9, 0.9);
+    }
+    .ball-3 {
+      z-index: -3;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 0.9, 0.9, 0.9);
+    }
+    .ball-4 {
+      z-index: -4;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 1.2, 0.9, 0.9);
+    }
+    .ball-5 {
+      z-index: -5;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 1.5, 0.9, 0.9);
+    }
+    .ball-6 {
+      z-index: -6;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 1.8, 0.9, 0.9);
+    }
+    .ball-7 {
+      z-index: -7;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 2.1, 0.9, 0.9);
+    }
+    .ball-8 {
+      z-index: -8;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 2.4, 0.9, 0.9);
+    }
+    
+    </style>
+
+</head>
+<body class="home__page __index">
+    <header id="header">
+      <div class="container">
+        <div class="navbar">
+    
+        <div class="brand_box">
+          <a class="navbar-brand" href="index.html" title="Al Maher">
+            <img src="assets/images/logo.svg" alt="Al Maher">
+          </a>
+        </div>
+    
+    
+        <div class="nav_lister">
+          <div class="item_">
+            <a href="#" class="btn_">
+              <div class="icon_">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <path d="M512,235c0,14,0,28,0,42c-1.24,8.72-1.93,17.56-3.82,26.14c-22.53,102.16-83.82,168.89-183.65,200.12
+                    c-15.45,4.83-31.5,6.86-47.53,8.74c-14,0-28,0-42,0c-8.39-1.2-16.89-1.91-25.15-3.69C107.1,486.19,40.18,424.69,8.73,324.54
+                    C3.98,309.41,2.06,293.67,0,278c0-14.67,0-29.33,0-44c1.2-8.06,2.2-16.15,3.62-24.17c17-96.12,90.47-176.11,184.79-201.43
+                    C203.4,4.38,218.67,2.06,234,0c14.67,0,29.33,0,44,0c10.01,1.63,20.16,2.32,30.04,4.7C408.12,28.79,473.32,90.02,503.5,188.43
+                    C508.15,203.59,510.13,219.3,512,235z M413.8,250.08c0.42-7.96-0.63-17.56-2.47-27.05c-15.76-81.11-92.16-134.65-173.8-121.86
+                    C134.59,117.29,77.61,231.07,126.51,323.03c2.06,3.87,2.32,7.22,1.16,11.34c-6.18,21.95-12.12,43.98-18.14,65.98
+                    c-1.69,6.19-1.44,6.44,4.81,4.81c22.87-5.98,45.76-11.89,68.59-18.02c3.83-1.03,6.96-0.53,10.46,1.21
+                    c29.39,14.55,60.41,19.45,92.75,14.08C362.86,389.67,414.7,322.76,413.8,250.08z"/>
+                  <path d="M263.12,379.63c-25.1,0.03-46.7-5.92-66.63-17.69c-3.49-2.06-6.59-2.28-10.36-1.22c-11.7,3.27-23.48,6.27-35.23,9.34
+                    c-7.84,2.05-8,1.86-5.8-6.17c3.09-11.24,6.04-22.51,9.34-33.68c1.18-4,0.73-7.16-1.52-10.75c-15.12-24.08-21.83-50.57-18.88-78.72
+                    c4.95-47.29,28.88-82.51,71.51-103.79c77.24-38.56,171.02,11.38,182.61,96.74c9.6,70.7-38.8,134.63-109.53,144.86
+                    C272.81,379.4,266.98,379.08,263.12,379.63z M301.53,324.63c1.5,0,3,0.07,4.5-0.01c16.88-0.95,29.92-12.68,32.38-29.05
+                    c0.61-4.09,0.22-7.57-4.14-9.61c-9.5-4.44-18.93-9.05-28.39-13.56c-4.03-1.92-7.22-1.15-9.97,2.62c-3.24,4.43-6.9,8.55-10.38,12.8
+                    c-2.39,2.92-5.22,3.76-8.86,2.32c-22.68-8.98-40-24.15-52.49-45c-1.98-3.3-1.73-6.19,0.72-9.15c2.55-3.07,4.82-6.38,7.31-9.51
+                    c2.99-3.76,3.48-7.56,1.44-12.07c-3.5-7.73-6.6-15.65-9.86-23.49c-4.12-9.91-17.17-12.92-25.25-5.62
+                    c-6.7,6.05-11.32,13.43-13.26,22.41c-2.79,12.91-0.04,24.97,6.32,36.08c15.93,27.8,36.68,51.19,65.15,66.66
+                    C270.63,318,285.32,324,301.53,324.63z"/>
+                </g>
+                </svg>
+    
+              </div>
+              <span>Whatsapp Us</span>
+            </a>
+          </div>
+          <div class="item_">
+            <div class="toggle_box">
+              <button class="menu_trigger" data-traget="master_menu">
+                <span></span>
+              </button> 
+            </div>
+          </div>
+        </div>
+    
+        <div class="nav_box_wrapper" id="master_menu">
+    
+          <div class="pattern_">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+          <nav class="navbar-inner">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a href="index.html#home" class="nav-link scroll" data-href="#home"  aria-title="" ><span>Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#about" class="nav-link scroll" data-href="#about"  aria-title="" ><span>About Us</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#products" class="nav-link scroll" data-href="#products"  aria-title="" ><span>Our Products</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#why" class="nav-link scroll" data-href="#why"  aria-title="" ><span>Why Almaher</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#clients" class="nav-link scroll" data-href="#clients"  aria-title="" ><span>Our Clients</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#contact" class="nav-link scroll" data-href="#contact"  aria-title="" ><span>Contact Us</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>  
+    
+        </div>
+      </div>
+    </header>
+<div class="loader">
+    <div class="loader-block">
+        <div class="loader-img">
+            <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="spinner">
+            <span class="ball-1"></span>
+            <span class="ball-2"></span>
+            <span class="ball-3"></span>
+            <span class="ball-4"></span>
+            <span class="ball-5"></span>
+            <span class="ball-6"></span>
+            <span class="ball-7"></span>
+            <span class="ball-8"></span>
+        </div>
+    </div>
+</div><section class="home-banner" id="home">
+
+    <div class="bg_layer">
+        <div class="img_ b-lazy" data-src="assets/images/car.png"></div>
+    </div>
+
+    <div class="container">
+        <div class="banner_wrapper">
+            <div class="content_">
+                <h2 class="default_anim d_2">Welcome To Almaher</h2>
+                <h1 class="default_anim d_3">Customize, Modify, <br>Upgrade, Repair, Replace</h1>
+                <div class="btn_group default_anim d_3">
+                    <a href="#about" data-scroll="#about" class="down_">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+                        <path d="M128.3,247c-34.3-34.3-69-69-103.8-103.8c4.5-4.4,9.4-9.2,14.6-14.4c25.5,25.5,51.2,51.2,76.9,76.9c0.4-0.2,0.8-0.5,1.2-0.7
+                            c0-65.2,0-130.4,0-196.1c7.4,0,14.2,0,21.5,0c0,65.3,0,130.6,0,195.7c25.8-25.8,51.5-51.5,76.9-77c6.2,6.5,11.1,11.5,15.6,16.2
+                            C197.4,178,162.7,212.7,128.3,247z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                  <div class="products_wrapper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide slide_">
+                                    <div class="inner_">
+                                        <div class="image_box">
+                                            <div class="img_ b-lazy" data-src="assets/images/unsplash_PzCGId2ljsY@1x.jpg"></div>
+                                        </div>
+
+                                        <div class="content_">
+                                            <label>Products</label>
+                                            <h4>Wheels & Tyres</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide_">
+                                    <div class="inner_">
+                                        <div class="image_box">
+                                            <div class="img_ b-lazy" data-src="assets/images/unsplash_4jN8iU31ijA@1x.jpg"></div>
+                                        </div>
+                                        <div class="content_">
+                                            <label>Products</label>
+                                            <h4>headlight & led</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide_">
+                                    <div class="inner_">
+                                        <div class="image_box">
+                                            <div class="img_ b-lazy" data-src="assets/images/unsplash_njY7y78-ckU@1x.jpg"></div>
+                                        </div>
+                                        <div class="content_">
+                                            <label>Products</label>
+                                            <h4>Brakes & Roots</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="swiper-slide slide_">
+                                    <div class="inner_">
+                                        <div class="image_box">
+                                            <div class="img_ b-lazy" data-src="assets/images/unsplash_pBrHNFqcX-M@1x.jpg"></div>
+                                        </div>
+                                        <div class="content_">
+                                            <label>Products</label>
+                                            <<h4>Exhaust system</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="swiper-slide slide_">
+                                    <div class="inner_">
+                                        <div class="image_box">
+                                            <div class="img_ b-lazy" data-src="assets/images/unsplash_TBOdCd-E3Ss@1x.jpg"></div>
+                                        </div>
+                                        <div class="content_">
+                                            <label>Products</label>
+                                            <h4>Performance parts</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+            </div>
+
+          
+        </div>
+    </div>
+</section>
+<section class="home-section" id="about">
+    <div class="bg_"><div class="img_ b-lazy" data-src="assets/images/about-img.jpg"></div></div>
+
+    <div class="container">
+        <div class="about_wrapper">
+            <div class="title-box center_">
+                <div class="section-title">
+                    <h2><span>ABOUT ALHAMER</span></h2>
+                </div>
+            </div>
+
+            <div class="text_box default_anim d_2">
+                <p>Al Maher is one of the Strongest Competitor for American parts in Muscat area from 2014 onwards, we
+having two branches so far, we are looking to establish more branches in the coming years. We are
+dealing with all kinds of American Auto Spare Parts GMC, Chevrolet, Cadillac, Hummer, Ford, Jeep,
+Dodge, RAM, and Chrysler etc...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section" id="products">
+    <div class="container">
+
+        <div class="title-box center_">
+            <div class="section-title">
+                <h2><span>Our Products</span></h2>
+            </div>
+        </div>
+
+        <div class="product_wrapper">
+
+            <div class="item_">
+                <div class="img_box">
+                    <div class="img_ b-lazy" data-src="assets/images/unsplash_PzCGId2ljsY@1x.jpg"></div>
+                </div>
+
+                <div class="title_">
+                    <h4>Wheels & Tyres</h4>
+                </div>
+            </div>
+
+             <div class="item_">
+                <div class="img_box">
+                    <div class="img_ b-lazy" data-src="assets/images/unsplash_4jN8iU31ijA@1x.jpg"></div>
+                </div>
+
+                <div class="title_">
+                    <h4>headlight & led</h4>
+                </div>
+            </div>
+
+             <div class="item_">
+                <div class="img_box">
+                    <div class="img_ b-lazy" data-src="assets/images/unsplash_njY7y78-ckU@1x.jpg"></div>
+                </div>
+
+                <div class="title_">
+                    <h4>Brakes & Roots</h4>
+                </div>
+            </div>
+
+             <div class="item_">
+                <div class="img_box">
+                    <div class="img_ b-lazy" data-src="assets/images/unsplash_pBrHNFqcX-M@1x.jpg"></div>
+                </div>
+
+                <div class="title_">
+                    <h4>Exhaust system</h4>
+                </div>
+            </div>
+
+             <div class="item_">
+                <div class="img_box">
+                    <div class="img_ b-lazy" data-src="assets/images/unsplash_TBOdCd-E3Ss@1x.jpg"></div>
+                </div>
+
+                <div class="title_">
+                    <h4>Performance parts</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="home-section" id="why">
+    <div class="bg_ color_"><div class="img_ b-lazy" data-src="assets/images/why-img.png"></div></div>
+
+    <div class="container">
+        <div class="title-box center_">
+            <div class="section-title white_">
+                <h2><span>why almaher</span></h2>
+            </div>
+        </div>
+
+        <div class="why_wrapper">
+            <div class="item_">
+                <div class="icon_ default_anim">
+                    <span>10<sup>+</sup></span>
+                </div>
+                <div class="text_ default_anim">
+                    <h4>Brands</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+
+             <div class="item_">
+                <div class="icon_ default_anim">
+                    <span>100<sup>+</sup></span>
+                </div>
+                <div class="text_ default_anim">
+                    <h4>Happy customers</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+
+             <div class="item_">
+                <div class="icon_ default_anim">
+                    <span>15<sup>+</sup></span>
+                </div>
+                <div class="text_ default_anim">
+                    <h4>premium products</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home-section" id="clients">
+    <div class="container">
+        <div class="title-box center_">
+            <div class="section-title">
+                <h2><span>Our Clients</span></h2>
+            </div>
+        </div>
+
+        <div class="clients_wrapper">
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-1.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-2.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-3.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-4.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-5.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-6.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-7.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item_">
+                <a href="#" target="blank_" class="link_">
+                    <div class="img_box">
+                        <div class="img_ b-lazy" data-src="assets/images/client-8.jpg"></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="home-section bg_dark" id="contact">
+    <div class="container">
+
+        <div class="title-box center_">
+            <div class="section-title">
+                <h2><span>Contact Us</span></h2>
+            </div>
+        </div>
+
+    </div>  
+
+    <div id="map" class="map_wrapper"></div>
+
+    <div class="container">
+        <div class="container_wrapper">
+
+            <div class="item_">
+                <div class="inner_">
+                    <div class="image_box">
+                        <div class="img_ b-lazy" data-src="assets/images/loc-1.png"></div>
+                    </div>
+
+                    <div class="content_">
+                        <label>Al Maher Branch 1</label>
+                        <p>Address Line 1 <br>Address Line 2</p>
+                        <p>+968-22051420, +968-92772294</p>
+                        <p>info@alhamer.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item_">
+                <div class="inner_">
+                    <div class="image_box">
+                        <div class="img_ b-lazy" data-src="assets/images/loc-2.png"></div>
+                    </div>
+
+                    <div class="content_">
+                        <label>Al Maher Branch 2</label>
+                         <p>Address Line 1 <br>Address Line 2</p>
+                        <p>+968-22051420, +968-92772294</p>
+                        <p>info@alhamer.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item_">
+                <div class="inner_">
+                    <div class="image_box">
+                        <div class="img_ b-lazy" data-src="assets/images/loc-3.png"></div>
+                    </div>
+
+                    <div class="content_">
+                        <label>Al Maher Branch 3</label>
+                         <p>Address Line 1 <br>Address Line 2</p>
+                        <p>+968-22051420, +968-92772294</p>
+                        <p>info@alhamer.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/scripts/lib/modernizr.min.js"></script>
+<script src="assets/scripts/lib/jquery-3.6.0.min.js"></script>
+<script src="assets/scripts/lib/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/scripts/min/home_plugins.js"></script>
+<script src="assets/scripts/min/home.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+ <script>
+ var testSwiper = new Swiper(".banner_wrapper .swiper-container", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      speed: 600,
+      breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+            el: ".banner_wrapper .swiper-pagination",
+            clickable:true,
+        },
+        on: {
+            init: function () {
+            window.bLazy.revalidate();
+            },
+            slideChange: function () {
+            window.bLazy.revalidate();
+            }
+        },
+    });
+
+     mapboxgl.accessToken = 'pk.eyJ1IjoiYWxhbnNoYXNhbGltIiwiYSI6ImNrcjB6MXQ4ZjAyaHQzMXB0enVmZml5cXgifQ.x4Zbac3MleCpIhW_Qgf24A';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/alanshasalim/ckwxwhjzg086b15n34nvb4v6v', // style URL
+        center: [47.988221, 29.369694], // starting position [lng, lat]
+        zoom: 12.5,
+        dragPan:true,
+        scrollZoom:false // starting zoom
+        });
+
+         // create a HTML element for each feature
+        var el = document.createElement('div');
+        var fl = document.createElement('div');
+        var gl = document.createElement('div');
+        el.className = 'map_marker';
+        fl.className = 'map_marker';
+        gl.className = 'map_marker';
+
+        const marker1 = new mapboxgl.Marker(el)
+        .setLngLat([48.024552, 29.450407])
+        .addTo(map);
+        //.togglePopup();
+        
+        const marker2 = new mapboxgl.Marker(fl)
+        .setLngLat([47.99028, 29.4793672])
+        .addTo(map)
+
+        const marker3 = new mapboxgl.Marker(gl)
+        .setLngLat([47.963051, 29.462670])
+        .addTo(map);
+
+</script>
+
+<footer>
+  <div class="container">
+    <div class="inner_">
+      <p>All rights reserved © Almaher 2021</p>
+
+      <ul class="social_">
+        <li>
+          <a href="#" class="link_" title="Facebook">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 383.9 383.6" enable-background="new 0 0 383.9 383.6" xml:space="preserve">
+              <g>
+                <path d="M175.8,0c11,0,22,0,32.9,0c6,0.9,12.1,1.4,18.1,2.7c77.1,16.6,127.2,62.7,150.6,138c3.6,11.5,5,23.3,6.5,35.2
+                  c0,10.7,0,21.5,0,32.2c-0.9,6.2-1.5,12.4-2.8,18.5c-16,74.1-59.9,123.6-131.5,148.4c-4.4,1.5-5,1.1-5-3.6c0-44.4,0-88.8-0.1-133.2
+                  c0-3.6,1.3-4.8,4.9-4.8c10.7,0.1,21.5,0,32.2,0.1c3.2,0,4.7-0.8,5.1-4.2c1.5-12.7,3.1-25.5,5-38.2c0.5-3.5-0.4-4.6-4-4.5
+                  c-12.8,0.2-25.7,0-38.5,0.1c-2.8,0-4.6-0.6-4.5-3.9c0.3-11-0.6-21.9,0.5-32.9c1-10.7,6.7-16.3,17.4-17.6c9.1-1.1,18.2-0.4,27.3-0.6
+                  c2.8,0,4-1,4-3.9c-0.1-11.4-0.1-22.7,0-34.1c0-2.8-1-4.1-3.8-4.3c-11.4-0.7-22.9-1.7-34.4-1.4c-13.3,0.3-26,3.3-36.9,11.4
+                  c-15.3,11.4-21.4,27.5-22.3,45.8c-0.6,11.9-0.1,23.9-0.2,35.9c0,5.4-0.2,5.5-5.4,5.5c-10.4,0-20.7,0.1-31.1-0.1
+                  c-3.6-0.1-4.8,1.1-4.8,4.7c0.2,12.5,0.2,24.9,0,37.4c0,3.6,1.2,4.9,4.7,4.8c10.2-0.2,20.5-0.1,30.7,0c5.7,0,5.8,0.1,5.8,5.9
+                  c0,9.5,0,19,0,28.4c0,36.8,0,73.6,0,110.4c0,5.2-0.1,5.2-5.2,5.3c-7.7,0.1-15.4-0.4-23.1-1.4c-42.1-5.5-78.9-22.6-108.9-52.5
+                  C10.7,281.8-9,223.5,3.8,156.9C18.7,79.7,66.1,30,141,6.5C152.3,3,164.1,1.6,175.8,0z"/>
+              </g>
+              </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="link_" title="Instagram">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 375.1 375" enable-background="new 0 0 375.1 375" xml:space="preserve">
+            <path d="M187.7,0c102.9-0.7,187.5,84.5,187.4,187.6C375,290.6,290.4,375.1,187.2,375C84.5,374.8-0.4,290.1,0,186.6
+              C0.4,84.3,84.7-0.8,187.7,0z M187.5,301c0,0.1,0,0.1,0,0.2c14.6,0,29.2,0,43.8,0c5.2,0,10.5-0.1,15.7-0.9
+              c22.8-3.7,40.4-14.5,49.7-36.5c4.2-9.9,6-20.3,6-31c0-28.6,0-57.1,0-85.7c0-5.4,0-10.7-0.8-16c-1.6-11.9-5.2-23.1-12.5-32.8
+              C277,81.9,259.7,74.5,240,74c-32-0.8-64.1-0.3-96.2-0.4c-5.2,0-10.5,0.1-15.7,0.9c-17.4,2.8-32.5,9.7-43,24.4
+              c-9,12.6-12.6,27-12.7,42.3c-0.1,28.4,0,56.9,0,85.3c0,5.9,0,11.7,0.8,17.5c1.7,11.8,5.2,22.9,12.5,32.4
+              c12.3,16.2,29.5,23.2,49,24.2C152.3,301.7,169.9,301,187.5,301z"/>
+            <path d="M282.1,187.6c0,16,0.1,31.9,0,47.9c-0.1,8.4-2.3,16.2-6.3,23.6c-7,12.7-18.2,19-32.1,20.5c-18.9,2.1-37.8,1.4-56.8,1.5
+              c-16.2,0.1-32.4-0.3-48.6-0.7c-27.1-0.7-44.7-18.8-45.3-45.9c-0.5-27.1-0.7-54.1-0.4-81.2c0.1-8.2,0.1-16.4,1.9-24.6
+              c4.1-18.8,17.7-31.5,36.9-33.6c19.1-2,38.4-1.4,57.5-1.5c16-0.1,31.9,0.3,47.9,0.7c27.3,0.7,45.2,18.7,45.4,46.1
+              C282.2,156.2,282.1,171.9,282.1,187.6C282.1,187.6,282.1,187.6,282.1,187.6z M187.9,247.8c33,0,60.1-27,60.1-60
+              c0-33.8-26.8-60.9-60.4-60.9c-33.5,0-60.5,26.9-60.5,60.4C127.1,221,154.1,247.8,187.9,247.8z M248.9,138.5
+              c6.4,0,11.8-5.5,11.6-11.7c-0.2-6.3-5.5-11.7-11.8-11.7c-6.5-0.1-11.7,5.4-11.7,12C237.2,133.6,242.3,138.6,248.9,138.5z"/>
+            <path d="M187.5,227.2c-21.7,0-39.8-18.3-39.7-40c0.1-21.7,18.4-39.8,40.1-39.6c21.6,0.2,39.5,18.2,39.5,39.8
+              C227.4,209.1,209.2,227.2,187.5,227.2z"/>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="link_" title="Youtube">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 383.8 383.7" enable-background="new 0 0 383.8 383.7" xml:space="preserve">
+            <g>
+              <path d="M383.8,175.9c0,10.5,0,21,0,31.4c-1,6.8-1.7,13.6-3,20.3C361.2,331.6,260,400.3,156,380.3C49.6,359.8-19.9,254.8,5.1,149.5
+                C23,74.4,70.9,26.6,145.2,5.4C155.4,2.5,166,1.4,176.5,0c10.7,0,21.5,0,32.2,0c6.2,0.9,12.4,1.5,18.4,2.8
+                C304,19.5,354,65.6,377.4,140.7C380.9,152.1,382.4,164,383.8,175.9z M192.2,120c-20.3,0-40.7,0-61,0c-2.1,0-4.3,0-6.3,0.3
+                c-20.1,3.3-32.8,17.8-32.9,38.2c-0.1,22.1,0,44.1,0,66.2c0,2.6,0.1,5.3,0.6,7.8c3.6,18.1,18.7,30.6,37.2,30.7
+                c41.6,0.1,83.3,0,124.9,0c1.6,0,3.3,0,4.8-0.3c20.2-3.3,32.8-17.8,32.9-38.2c0.1-22.1,0-44.1,0-66.2c0-2.6-0.1-5.3-0.6-7.8
+                c-3.6-18.1-18.7-30.6-37.2-30.7C233.8,119.9,213,120,192.2,120z"/>
+              <path d="M165.1,191.5c0-8.8,0-17.7,0-26.5c0-4.3,0.6-4.7,4.2-2.6c15.7,9.1,31.4,18.3,47.2,27.4c2.2,1.3,2.7,2.3,0.1,3.8
+                c-15.9,9.1-31.7,18.4-47.5,27.5c-3.2,1.8-3.8,1.4-3.9-2.3C165,209.7,165.1,200.6,165.1,191.5z"/>
+            </g>
+            </svg>
+
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="rtl" dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>50 Year Challenge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="preload" href="assets/images/logo.svg" as="image">
+    <link rel="shortcut icon" href="assets/images/favicon_50_years.ico">
+    <link rel="stylesheet" href="assets/styles/critical/main.css">
+    <style>
+      .loader {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        background: #fff;
+        margin: auto;
+        -webkit-transition: width .5s ease-in-out, height .5s ease-in-out, opacity .3s .5s ease-in-out, visibility .3s .5s ease-in-out;
+        -o-transition: width .5s ease-in-out, height .5s ease-in-out, opacity .3s .5s ease-in-out, visibility .3s .5s ease-in-out;
+        transition: width .5s ease-in-out, height .5s ease-in-out, opacity .3s .5s ease-in-out, visibility .3s .5s ease-in-out
+      }
+      .loader .loader-block {
+        -webkit-transition: all .4s .1s ease-in-out;
+        -o-transition: all .4s .1s ease-in-out;
+        transition: all .4s .1s ease-in-out
+      }
+      .loader .loader-img {
+        margin: 35px 0;
+        text-align: center
+      }
+      .loader .loader-img img {
+        max-width: 220px;
+        width: 220px;
+        height: auto
+      }
+      @media only screen and (max-width:767px){
+        .loader .loader-img img {
+        max-width: 180px;
+        width: 180px;
+      }
+      }
+      .is-loaded .loader {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none
+      }
+      .dom-loaded .loader .loader-block {
+        opacity: 0;
+        -webkit-transform: translateY(2em) scale(.5);
+        -ms-transform: translateY(2em) scale(.5);
+        transform: translateY(2em) scale(.5)
+      }
+    .spinner {
+      position: relative;
+      z-index: 1;
+      height: 40px;
+      width: 40px;
+      margin: 0 auto;
+    }
+    [class^=ball-] {
+      position: absolute;
+      display: block;
+      left: 30px;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      transition: all 0.5s;
+      animation: circleRotate 4s both infinite;
+      transform-origin: 0 250% 0;
+    }
+    @keyframes circleRotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(1440deg);
+      }
+    }
+    .ball-1 {
+      z-index: -1;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    }
+    .ball-2 {
+      z-index: -2;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 0.6, 0.9, 0.9);
+    }
+    .ball-3 {
+      z-index: -3;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 0.9, 0.9, 0.9);
+    }
+    .ball-4 {
+      z-index: -4;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 1.2, 0.9, 0.9);
+    }
+    .ball-5 {
+      z-index: -5;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 1.5, 0.9, 0.9);
+    }
+    .ball-6 {
+      z-index: -6;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 1.8, 0.9, 0.9);
+    }
+    .ball-7 {
+      z-index: -7;
+      background-color: #f47530;
+      animation-timing-function: cubic-bezier(0.5, 2.1, 0.9, 0.9);
+    }
+    .ball-8 {
+      z-index: -8;
+      background-color: #084364;
+      animation-timing-function: cubic-bezier(0.5, 2.4, 0.9, 0.9);
+    }
+    
+    </style>
+
+</head>
+<body class="home__page __index_ar">
+    <header id="header">
+      <nav class="navbar  navbar-expand-lg navbar-light">
+        <div class="barnd_box left_"><a class="navbar-brand" href="index.html" title=""><img src="assets/images/logo.svg" alt=""></a></div>
+        <div class="hd_nav_box">
+          <ul>
+            <li class="no_hide"><a class="mn_link" href="index.html" title="" ><span>English</span></a></li>
+            <li>
+              <button class="menu_trigger" data-traget="master_menu">
+                Menu 
+              </button> 
+            </li>
+            </ul>
+        </div> 
+        <div class="nav_box_wrapper" id="master_menu">
+          <nav class="navbar-inner">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a href="#" class="nav-link scroll" data-href="#home"  aria-title="" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link scroll" data-href="#about"  aria-title="" >About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link scroll" data-href="#contact"  aria-title="" >Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div> 
+      </nav>
+    </header>
+<div class="loader">
+    <div class="loader-block">
+        <div class="loader-img">
+            <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="spinner">
+            <span class="ball-1"></span>
+            <span class="ball-2"></span>
+            <span class="ball-3"></span>
+            <span class="ball-4"></span>
+            <span class="ball-5"></span>
+            <span class="ball-6"></span>
+            <span class="ball-7"></span>
+            <span class="ball-8"></span>
+        </div>
+    </div>
+</div><section class="home-banner" id="home">
+    <h1> PGS - New Framework</h1>
+</section>
+<section class="home-section about_section" id="about">
+  <div class="container">
+      <div class="about_wrapper">
+        <div class="text_box text-center">
+          <p>	تماشياً مع إعلان صاحب السمو الشيخ محمد بن راشد آل مكتوم عام 2020 "عام الاستعداد للخمسين"، تم إطلاق مبادرة "تحدي الخمسين عاماً" كجزء من فعاليات شهر الإمارات للابتكار 2020 للمساهمة في تصميم المستقبل وصياغة شكل الحياة في دولة الإمارات العربية المتحدة.</p>
+        </div>
+      </div>
+   </div>
+</section>
+
+<script src="assets/scripts/lib/modernizr.min.js"></script>
+<script src="assets/scripts/lib/jquery-3.6.0.min.js"></script>
+<script src="assets/scripts/lib/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/scripts/min/home_plugins.js"></script>
+<script src="assets/scripts/min/home.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+ <script>
+ var testSwiper = new Swiper(".banner_wrapper .swiper-container", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      speed: 600,
+      breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+            el: ".banner_wrapper .swiper-pagination",
+            clickable:true,
+        },
+        on: {
+            init: function () {
+            window.bLazy.revalidate();
+            },
+            slideChange: function () {
+            window.bLazy.revalidate();
+            }
+        },
+    });
+
+     mapboxgl.accessToken = 'pk.eyJ1IjoiYWxhbnNoYXNhbGltIiwiYSI6ImNrcjB6MXQ4ZjAyaHQzMXB0enVmZml5cXgifQ.x4Zbac3MleCpIhW_Qgf24A';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/alanshasalim/ckwxwhjzg086b15n34nvb4v6v', // style URL
+        center: [47.988221, 29.369694], // starting position [lng, lat]
+        zoom: 12.5,
+        dragPan:true,
+        scrollZoom:false // starting zoom
+        });
+
+         // create a HTML element for each feature
+        var el = document.createElement('div');
+        var fl = document.createElement('div');
+        var gl = document.createElement('div');
+        el.className = 'map_marker';
+        fl.className = 'map_marker';
+        gl.className = 'map_marker';
+
+        const marker1 = new mapboxgl.Marker(el)
+        .setLngLat([48.024552, 29.450407])
+        .addTo(map);
+        //.togglePopup();
+        
+        const marker2 = new mapboxgl.Marker(fl)
+        .setLngLat([47.99028, 29.4793672])
+        .addTo(map)
+
+        const marker3 = new mapboxgl.Marker(gl)
+        .setLngLat([47.963051, 29.462670])
+        .addTo(map);
+
+</script>
+
+<footer>
+  <div class="container-fluid">
+    <div class="inner center"><p class="text-center">تحدي الخمسين. كل الحقوق محفوظة. حقوق الطبع والنشر 2020</p></div>
+  </div>
+  <div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" ></path></svg></div>
+</footer>
+</body>
+</html>
