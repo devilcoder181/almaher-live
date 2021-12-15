@@ -227,12 +227,48 @@
             }
         },
     });
+    
+    var happySwiper = new Swiper(".happy_wrapper .swiper-container", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      speed: 600,
+      breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+            el: ".happy_wrapper .swiper-pagination",
+            clickable:true,
+        },
+        on: {
+            init: function () {
+            window.bLazy.revalidate();
+            },
+            slideChange: function () {
+            window.bLazy.revalidate();
+            }
+        },
+    });
 
      mapboxgl.accessToken = 'pk.eyJ1IjoiYWxhbnNoYXNhbGltIiwiYSI6ImNrcjB6MXQ4ZjAyaHQzMXB0enVmZml5cXgifQ.x4Zbac3MleCpIhW_Qgf24A';
         const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/alanshasalim/ckwxwhjzg086b15n34nvb4v6v', // style URL
-        center: [47.988221, 29.369694], // starting position [lng, lat]
+        center: [58.0967622, 23.6599766], // starting position [lng, lat]
         zoom: 12.5,
         dragPan:true,
         scrollZoom:false // starting zoom
@@ -241,23 +277,20 @@
          // create a HTML element for each feature
         var el = document.createElement('div');
         var fl = document.createElement('div');
-        var gl = document.createElement('div');
+
         el.className = 'map_marker';
         fl.className = 'map_marker';
-        gl.className = 'map_marker';
-
+   
         const marker1 = new mapboxgl.Marker(el)
-        .setLngLat([48.024552, 29.450407])
+        .setLngLat([58.0967622, 23.6599766])
         .addTo(map);
         //.togglePopup();
         
         const marker2 = new mapboxgl.Marker(fl)
-        .setLngLat([47.99028, 29.4793672])
+        .setLngLat([58.080279, 23.688323] )
         .addTo(map)
 
-        const marker3 = new mapboxgl.Marker(gl)
-        .setLngLat([47.963051, 29.462670])
-        .addTo(map);
+
 
 </script>
 
